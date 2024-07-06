@@ -123,9 +123,23 @@ return {
 		opts = {
 			ensure_installed = {
 				'stylua',
+				'eslint-lsp',
 				'shellcheck',
+				'prettierd',
 				'shfmt',
 				'flake8',
+			},
+		},
+	},
+
+	{
+		'stevearc/conform.nvim',
+		opts = {
+			formatters_by_ft = {
+				['javascript'] = { 'prettierd' },
+				['typescript'] = { 'prettierd' },
+				['vue'] = { 'prettierd' },
+				['markdown'] = { 'prettierd' },
 			},
 		},
 	},

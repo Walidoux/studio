@@ -14,11 +14,9 @@ require('lazy').setup({
 
 		-- Rust/Cargo workflow
 		{ import = 'lazyvim.plugins.extras.lang.rust' },
-		-- { import = "lazyvim.plugins.extras.lang.markdown" },
+		{ import = 'lazyvim.plugins.extras.lang.markdown' },
 
 		-- Web development
-		{ import = 'lazyvim.plugins.extras.formatting.prettier' },
-		{ import = 'lazyvim.plugins.extras.linting.eslint' },
 		-- { import = "lazyvim.plugins.extras.lang.prisma" },
 		-- { import = "lazyvim.plugins.extras.lang.vue" }
 		-- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
