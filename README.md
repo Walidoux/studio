@@ -1,37 +1,66 @@
-# 🚀 Terminoux
+# ⚗️ Laboratory
 
-My Neovim workflow powered by [💤 LazyVim](https://github.com/LazyVim/LazyVim).
+My working environment where I mostly spend enjoying writing code in my spare time.
 
-## Specs
+## 🏗️ Directory structure
 
-(gnome-tweaks -v or dconf watch /) to toggle debug/verbose mode
-
-you can make boot load time faster by setting GRUB_TIMEOUT_STYLE=hidden in /etc/default/grub, it'll disable the screen of choosing boot options
-
-## 🔗 Commands
-
-```sh
-nvm install --lts
-npm i -g pnpm
+```bash
+lua/ # nvim setup
+├─ config/
+├─ plugins/
+arch/ # system dotfiles/executables
+├─ resources/
+└─ config/
+hyprland/ # desktop setup/config
+└─
 ```
 
-## 📦 Packages
+## 🛠️ Specs
 
-- Mutter/(rounded)
-  - Theme: [Blur Transparent windows and/or with rounded corners](https://github.com/yilozt/mutter-rounded)
-  - Source code: [A Wayland display server and X11 window manager and compositor library.](https://gitlab.gnome.org/GNOME/mutter)
+### 💻 Computer
 
-## 🛠️ Handy tools
+- Machine: LENOVO IdeaPad 5 14ARE05
+- CPU: AMD Ryzen 3 4300U with Radeon Graphics / 64 bits
+- Graphics:
+  - Device: AMD Renoir (Radeon Vega Series / Radeon Mobile Series)
+  - Driver: AMDGPU
+- Audio: AMD Renoir Radeon High Definition Audio
+- Network: Intel Wi-Fi 6 AX200
+- Storage: OEM Samsung 128GB M.2 PCIe NVME
 
-- [dconf-editor - GUI manager for gnome settings](https://wiki.gnome.org/Apps/DconfEditor)
+_Credits goes to [inxi - CLI system information tool](https://github.com/smxi/inxi)_
 
-## 🏷️ Software/Apps used
+### ⚙️ System
 
-- [Lightweight GPU-based Voxel Art Editor.](https://ephtracy.github.io/)
+- Distro-OS: [Arch](https://archlinux.org/) Linux
+- Compositor: Wayland (Using [Hyprland](https://hyprland.org/))
+- IDE: Neovim (powered by [💤 LazyVim](https://github.com/LazyVim/LazyVim))
+- Browser: Firefox
+- Shell: zsh
+
+## 🏷️ Stuff I like to use
+
+- [Solaar - Device manager for Logitech](https://github.com/pwr-Solaar/Solaar)
+- [MagicaVoxel - Lightweight GPU-based Voxel Art Editor](https://ephtracy.github.io/)
+- [Lutris - Open source game manager library](https://lutris.net/)
+
+### Motivation
+
+I've never been comfortable working with VSCode since extensions make the startup time of the window instance slower than ever, especially regarding Rust Analyzer and Type
+script LSPs.Also styling the UI of the window is cumbersome, it's definitely not worth putting effort to it when you're using Linux.
+
+Jetbrains products, meh, so many things I wouldn't bother myself using since I've already tried both Webstome and Rustover (Beta version).
+
+Didn't have quite the time to make an IDE myself out of VSCodium clone and I've also looked forward a long time ago to use Nvim. I decided to give it a shot and got addict
+ed to it tbh.
 
 ## 👍 Good to know
 
-### Storing passwords for SSH connections without prompting them
+### ⚡ Boot load time faster
+
+Setting `GRUB_TIMEOUT_STYLE=hidden` in `/etc/default/grub`, it'll disable the screen of choosing boot options.
+
+### 🔒 Storing passwords for SSH connections without prompting them
 
 ```sh
 ssh-keygen -t rsa
@@ -39,11 +68,11 @@ ssh-copy-id -i saved-keygen-file.pub username@host
 ssh username@host
 ```
 
-### Importing/Exporting GPG keys (Inspired from RedHat GPG migration manual)
+### 🔑 Importing/Exporting GPG keys (Inspired from RedHat GPG migration manual)
 
 #### Exporting keys + trust database
 
-```sh
+```bash
 ## export public key
 gpg -a --export > pub_key.asc
 
@@ -59,28 +88,9 @@ gpg --export-ownertrust > otrust.txt
 ```sh
 gpg --import private_key.asc
 gpg --import pub_key.asc
-gpg -K
-gpg -k
+gpg -K # ?? wtf
 gpg --import-ownertrust otrust.txt
 ```
-
-## Directory structure
-
-It's on the work !
-
-## 🤔 Wu do hell izdisse ?
-
-My config files used for running my Neovim setup/workflow and other files related to system wide dependencies in the form of executable shell scripts for Linux.
-
-### Motivation
-
-I've never been comfortable working with VSCode since extensions make the startup time of the window instance slower than ever, especially regarding Rust Analyzer and Type
-script LSPs.Also styling the UI of the window is cumbersome, it's definitely not worth putting effort to it when you're using Linux.
-
-Jetbrains products, meh, so many things I wouldn't bother myself using since I've already tried both Webstome and Rustover (Beta version).
-
-Didn't have quite the time to make an IDE myself out of VSCodium clone and I've also looked forward a long time ago to use Nvim. I decided to give it a shot and got addict
-ed to it tbh.
 
 ## 🎯 Current Focus and Future
 

@@ -1,0 +1,4 @@
+username: "Walidoux"
+email: "ma.walidkorchi@icloud.com"
+
+log_level: 'all' # 'all' | 'only-steps' | 'only-errors' | 'nothing'

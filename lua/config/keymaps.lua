@@ -1,5 +1,5 @@
 -- Default keymaps: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Overriden keys should be provided in plugins/telescope.lua
+-- Some keys are cannot be overriden and should be provided under plugins/telescope.lua
 
 local map = vim.keymap
 
