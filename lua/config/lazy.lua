@@ -31,7 +31,7 @@ require('lazy').setup({
 	},
 	defaults = { lazy = false, version = false },
 	install = { missing = true, colorscheme = { 'github_dark_default' } },
-	checker = { enabled = true, frequency = 604800 }, -- check for updates once in a week
+	checker = { enabled = true, frequency = 86400 }, -- check for updates once a day
 	performance = {
 		rtp = {
 			disabled_plugins = {
