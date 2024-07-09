@@ -13,6 +13,7 @@ return {
 		display = {
 			show_repository = false,
 			show_cursor_position = false,
+			swap_icons = true,
 		},
 		idle = {
 			timeout = 900000,
