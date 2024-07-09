@@ -34,7 +34,7 @@ _Credits goes to [inxi - CLI system information tool](https://github.com/smxi/in
 
 - Distro-OS: [Arch](https://archlinux.org/) Linux
 - Compositor: Wayland (Using [Hyprland](https://hyprland.org/))
-- IDE: Neovim (powered by [💤 LazyVim](https://github.com/LazyVim/LazyVim))
+- IDE: Neovim (powered by [LazyVim](https://github.com/LazyVim/LazyVim) and extending [folke's awesome workflow](https://lazy.folke.io/))
 - Browser: Firefox
 - Shell: zsh
 
