@@ -8,7 +8,7 @@ return {
 		editor = {
 			image = 'https://i.postimg.cc/jjTZ1tmt/128x128-2x.png',
 			client = '1258851506958893178',
-			tooltip = 'Terminoux',
+			tooltip = '⚗️  Brewing code',
 		},
 		display = {
 			show_repository = false,
