@@ -105,11 +105,11 @@ gpg --import-ownertrust otrust.txt
 - [ ] Svelte language support
 - [x] Tailwind CSS Intellisense
 - [ ] Thunder client alternative to test API's
-- [ ] Add emojisense to insert emojis
+- [x] Add emoji/symbols/fonts selection
 - [x] Enhance DRPC
 - [ ] Docker extension for nvim ?
 - [ ] Editorconfig support
 - [ ] Import cost npm packages except for cargo files
 - [ ] remote ssh sessions on Neovim
-- [ ] Track time spent in each workspace, file and language
-- [ ] versions lens to preview new package versions
+- [ ] Make wakapi self-hosted service work with docker
+- [ ] versions lens: preview new package versions

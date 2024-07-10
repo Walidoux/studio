@@ -1,8 +1,12 @@
-#!/bin/env bash
+#!/bin/bash
 
 source common.sh
 
 verbose $ORANGE "Installing packages"
+
+# yay as helper pkg manager
+cd ~ && git clone --depth=1 https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+
 pacman --sync --needed --noconfirm \
   noto-fonts \
   noto-fonts-cjk \

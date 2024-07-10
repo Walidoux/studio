@@ -1,4 +1,14 @@
-username: "Walidoux"
-email: "ma.walidkorchi@icloud.com"
+# Personal info
+user:
+  name: "Walidoux"
+  email: "ma.walidkorchi@icloud.com"
+  continent: "Africa"
+  country: "Morocco"
+  city: "Casablanca"
 
-log_level: 'all' # 'all' | 'only-steps' | 'only-errors' | 'nothing'
+# System info
+system:
+  name: "studio"
+
+# Misc
+log_level: 'all' # 'all' | 'steps' | 'nothing'
