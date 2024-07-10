@@ -16,8 +16,8 @@ return {
 			swap_icons = true,
 		},
 		idle = {
-			timeout = 900000,
-			text = 'Sleeping',
+			timeout = 900000, -- ~15min
+			text = '💤 Sleeping...',
 		},
 		text = {
 			viewing = '👀 Checking {}',
