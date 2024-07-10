@@ -2,6 +2,8 @@
 
 My working environment where I mostly spend enjoying writing code in my spare time.
 
+This may not suit your preferences, use my config wisely...
+
 ## 🏗️ Directory structure
 
 ```bash

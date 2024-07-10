@@ -41,11 +41,3 @@ flatpak install \
   com.valvesoftware.Steam \
   com.spotify.Client \
   io.github.pwr_solaar.solaar
-
-verbose $ORANGE "Copying DOTFILES"
-cp /etc/pacman.conf "$(pwd)/resources"
-
-verbose $ORANGE "Pre-configuring"
-# xdg-settings set default-web-browser thorium-browser.desktop
-# systemctl enable paccache.timer
-# mv "$(pwd)/resources/mpv.conf" /etc/mpv/mpv.conf
